@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WeekViewActivity"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/prevMonth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:backgroundTint="#000000"
+            android:onClick="previousWeekAction"
+            android:text="@string/back"
+            android:textColor="#2FFF00"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/monthYearTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="#A9000000" />
+
+        <Button
+            android:id="@+id/nextMonth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:backgroundTint="#000000"
+            android:onClick="nextWeekAction"
+            android:text="@string/forward"
+            android:textColor="#2FFF00"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="T2"
+            android:textAlignment="center"
+            android:textColor="#A9000000" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="T3"
+            android:textAlignment="center"
+            android:textColor="#A9000000" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="T4"
+            android:textAlignment="center"
+            android:textColor="#A9000000" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="T5"
+            android:textAlignment="center"
+            android:textColor="#A9000000" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="T6"
+            android:textAlignment="center"
+            android:textColor="#A9000000" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="T7"
+            android:textAlignment="center"
+            android:textColor="#A9000000" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CN"
+            android:textAlignment="center"
+            android:textColor="#A9000000" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/calendarRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <Button
+        android:id="@+id/newEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:backgroundTint="#000000"
+        android:onClick="newEventAction"
+        android:text="THÊM SỰ KIỆN"
+        android:textColor="#2FFF00"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"/>
+    <ListView
+        android:id="@+id/eventListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+</LinearLayout>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pickTimeLy"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".EventEditActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Tên sự kiện"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/eventNameET"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bottomborder"
+        android:hint="Tên sự kiện"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textColor="@color/gray"
+        android:textColorHint="@color/gray"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/eventDateTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Date"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/eventTimeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Time"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Thời gian kết thúc"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_circle"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="Bắt đầu"
+            android:textColor="@color/gray"
+            android:textSize="24dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/border_rec"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnStartTime"
+                style="?android:spinnerStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:backgroundTint="#FFFFFF"
+                android:gravity="center"
+                android:text="00:00:00"
+                android:textColor="#959595" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bg_circle"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="Kết thúc"
+            android:textColor="@color/gray"
+            android:textSize="24dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/border_rec"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnEndTime"
+                style="?android:spinnerStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:gravity="center"
+                android:text="00:00:00"
+                android:textColor="#959595"
+                android:visibility="visible" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/border_rec"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/endTimeBtn"
+            style="?android:spinnerStyle"
+            android:layout_width="266dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_vertical"
+            android:layout_weight="0"
+            android:backgroundTint="#00FFFFFF"
+            android:gravity="center"
+            android:text="../../...."
+            android:textColor="#959595"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Loại công việc"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0"
+        android:background="@drawable/border_rec"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/sprTypeOfWork"
+            android:layout_width="266dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="#000000"
+            android:backgroundTint="#000000" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Tiến trình"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0"
+        android:background="@drawable/border_rec"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/sprProgress"
+            android:layout_width="266dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="#000000"
+            android:backgroundTint="#000000" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/saveEvent"
+        android:layout_width="197dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:background="@null"
+        android:backgroundTint="#000000"
+        android:onClick="saveEventAction"
+        android:text="LƯU"
+        android:textColor="#2FFF00"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

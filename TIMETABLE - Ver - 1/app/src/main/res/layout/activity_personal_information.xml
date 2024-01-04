@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".PersonalInformation">
+
+    <TextView
+        android:id="@+id/tvEM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="trnson32@gmail.com"
+        android:textSize="24sp"
+        android:textColor="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="313dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bottomborder"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textColorHint="@color/gray"
+        android:textColor="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEM" />
+
+    <EditText
+        android:id="@+id/editTextNum"
+        android:layout_width="313dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bottomborder"
+        android:ems="10"
+        android:hint="Phone number"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textColor="@color/gray"
+        android:textColorHint="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/border_rec"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNum">
+
+        <Button
+            android:id="@+id/dateTimeBtn"
+            style="?android:spinnerStyle"
+            android:layout_width="313dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_vertical"
+            android:layout_weight="0"
+            android:backgroundTint="#00FFFFFF"
+            android:gravity="center"
+            android:text="../../...."
+            android:textColor="#959595"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/btnIFOK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@null"
+            android:backgroundTint="#000000"
+            android:text="OK"
+            android:textColor="#2FFF00"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnIFCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@null"
+            android:backgroundTint="#000000"
+            android:text="HỦY"
+            android:textColor="#2FFF00"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
